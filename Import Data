@@ -1,0 +1,19 @@
+from flask import Flask, jsonify
+import random
+import datetime
+
+app = Flask(__AMAZON-API__)
+
+@app.route('/sales_data', methods=['GET'])
+def get_sales_data():
+    sales_data = []
+    for i in range(100):
+        sales_data.append({
+            'order_id': i + 1,
+            'amount': random.uniform(10.0, 100.0),
+            'date': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        })
+    return jsonify(sales_data)
+
+if __AMAZON-API__ == '__main__':
+    app.run(debug=True, port=5000)
