@@ -1,5 +1,6 @@
 # ETL-Build-for-Sales-Data
-# This project demonstrates how to build a data pipeline that ingests sales data from an API, stores it in Amazon Redshift, and schedules the pipeline using Apache Airflow and Control-M. The project will include the following components:
+ 
+This project demonstrates how to build a data pipeline that ingests sales data from an API, stores it in Amazon Redshift, and schedules the pipeline using Apache Airflow and Control-M. The project will include the following components:
 
 #Data Ingestion:
 
